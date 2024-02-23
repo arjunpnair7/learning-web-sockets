@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSockets</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="room-input">
+    <form id="room-form">
+        <label>
+            <input type="text" id="username" />
+            <input type="text" id="room-ident" />
+        </label>
+        <button type="submit">Join Room</button>
+    </form>
+</div>
+
+<div id="chat-page" class="hidden">
+    <h1>Group Members</h1>
+    <ul id="chat-members">
+        <li>Test Item</li>
+    </ul>
+    <button id="start-vote" type="button">Start Voting</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
